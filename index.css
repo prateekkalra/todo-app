@@ -1,0 +1,171 @@
+*{
+  font-family: Cabin;
+}
+body{
+	background-color: #F4F4F3;
+}
+input:focus,
+button:focus {
+    outline: none;
+}
+/label {
+  overflow-wrap: break-word!important;
+  word-wrap: break-word!important;
+  hyphens: auto!important;
+}
+.panel{
+  border-radius: 0px;
+}
+.paper {
+	margin: 0 auto;
+  min-width: 50%;
+	width: 50%;
+  background: #fff;
+  box-shadow:
+    0 1px 1px rgba(0,0,0,0.15),
+    0 10px 0 -5px #eee,
+    0 10px 1px -4px rgba(0,0,0,0.15),
+    0 20px 0 -10px #eee,
+    0 20px 1px -9px rgba(0,0,0,0.15),
+    0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#inp{
+  border: none;
+  font-size: 1.9em;
+  width: 87%;
+  background-color: #FDFDFC;
+}
+
+.panel-head{
+  padding-left: 2%;
+}
+
+#header{
+	width: 498px;
+	height: 8%;
+}
+
+.delbtn{
+  float: right;
+  visibility: hidden;
+  cursor: pointer;
+  font-size:1.5em !important;
+}
+.listtd:hover .delbtn{
+  visibility: visible;
+}
+#checkbox{
+  float: left;
+  width: 10%;
+}
+
+#pills{
+  cursor: pointer;
+}
+
+.label {
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:black;
+}
+
+.label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+}
+
+
+.label input:checked ~ .checkmark {
+    background-color: #2db84b;    
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+}
+
+.label input:checked ~ .checkmark:after {
+    display: block;
+     left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.label .checkmark:hover {
+  border-color: lightgreen;
+}
+
+.label .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.tspan{
+  margin-left: 35px;
+}
+hr{
+  height: 4px;
+  border: 0;
+  box-shadow: 0 4px 4px -4px #8c8b8b inset;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#inp::-webkit-input-placeholder { 
+  color: #ccc;
+}
+
+.table{
+  margin-bottom: 0px;
+}
+.label span{
+  font-weight:400;
+  color: #565655;
+}
+.panel-footer{
+  background-color: white;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  color:#aaa;
+  background-color: white;
+  height: 40px;
+  border: 1px solid #ccc
+}
+.nav-pills>li>a, .nav-pills>li>a:focus, .nav-pills>li>a:hover{
+  color: #aaa;
+}
+

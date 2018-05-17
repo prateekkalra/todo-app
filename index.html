@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple ToDo App</title>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	 <link href="https://fonts.googleapis.com/css?family=Cabin|Pacifico" rel="stylesheet">
+
+</head>
+<body>
+	<h1 class="text-center" style="font-family: Pacifico; color:grey">Todo App</h1>
+<div class="panel panel-default paper">
+  <div class="panel-head row">
+  		<span class=" down col-xs-1" style="font-size: 2.2em!important; color:#E2E2E1"><i class="fa fa-angle-down"></i></span>
+      <input id="inp" class="col-xs-11" placeholder="What needs to be done?" type="text">
+  </div>
+  <hr>
+  <div>
+    <table class="table">
+      <tbody id="lists">
+      </tbody>
+    </table>
+  </div>
+    <div class="panel-footer">
+	    <div id="footer-opts" class="row">
+	      <p class="col-xs-3 text-center" style="margin-top: 10px;color: #666"><span id="left_count">0</span>  items left</p>
+	      <div class="text-center">
+	      <ul id="pills" class="nav nav-pills col-xs-6">
+		    <li class="active"><a data-toggle="pill">All</a></li>
+		    <li><a data-toggle="pill">Active</a></li>
+		    <li><a data-toggle="pill">Completed</a></li>
+		  </ul>
+			</div>
+		  <a href="#" id="clearc" class="col-xs-3"  style="color: #666;margin-top: 10px;margin-left: -40px ">Clear completed</a>
+		    <div class="tab-content">
+  </div>  
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
