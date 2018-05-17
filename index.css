@@ -168,9 +168,3 @@ hr{
 .nav-pills>li>a, .nav-pills>li>a:focus, .nav-pills>li>a:hover{
   color: #aaa;
 }
-
-@media only screen and (max-width: 320px) {
-    .paper{
-      width: 100%;
-    }
-}
