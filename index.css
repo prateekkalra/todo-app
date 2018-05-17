@@ -169,3 +169,8 @@ hr{
   color: #aaa;
 }
 
+@media only screen and (max-width: 320px) {
+    .paper{
+      width: 100%;
+    }
+}
